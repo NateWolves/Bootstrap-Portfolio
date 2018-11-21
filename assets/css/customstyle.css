@@ -70,7 +70,9 @@ a:active {
     background-color:#666666;
 }
 
-
+.col-md-12 {
+    padding-right: 0px;
+}
 
 
 #Profilepic {
@@ -116,7 +118,7 @@ a:active {
         height:;
     }
 }
-@media screen and (max-width: 321px){
+@media screen and (max-width: 320px){
     .navbar{
         padding: 0px 0px 0px 0px;
     }
