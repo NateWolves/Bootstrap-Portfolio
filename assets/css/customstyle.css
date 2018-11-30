@@ -69,9 +69,8 @@ a:focus {
 a:active {
     background-color:#666666;
 }
-
 .col-md-12 {
-    padding-right: 0px;
+    padding-right:0px;
 }
 
 
@@ -102,6 +101,11 @@ a:active {
     color:#cccccc;
     z-index: -3;
 }
+/*removing space on the right edge of mobile screens
+#intro {
+    overflow-x:hidden;
+    }   */
+
 @media screen and (max-width: 600px){
     h1 {
         margin: 0px 0px 8px 8px;
