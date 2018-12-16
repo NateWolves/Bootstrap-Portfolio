@@ -20,9 +20,6 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
-
-    
-
 h1 {
     Background-color: #4aaaa5;
     height: 72px;
@@ -42,6 +39,9 @@ h5 {
     border-bottom-style: solid;
     border-bottom-color: #cccccc;
     padding: 0px 0px 20px 0px;
+}
+.projectTitle{
+    padding: 0px 0px 0px 0px;
 }
 .btn {
     background-color: #4aaaa5;
@@ -69,10 +69,14 @@ a:focus {
 a:active {
     background-color:#666666;
 }
-.col-md-12 {
-    padding-right:0px;
-}
 
+.portfolioImage {
+    opacity: 0.5;
+    z-index: -1;
+}
+.project {
+    z-index: -1;
+}
 
 #Profilepic {
     float:;
@@ -101,10 +105,33 @@ a:active {
     color:#cccccc;
     z-index: -3;
 }
-/*removing space on the right edge of mobile screens
-#intro {
-    overflow-x:hidden;
-    }   */
+@media screen and (max-width: 768px){
+    /* removing the hover description as bootstrap clicks in larger picture sizes*/
+    body .projectDesc{
+        color: #ffffff;
+    }
+
+    
+}
+
+@media screen and (max-width: 991px){
+    .projectDesc {
+       color: transparent;
+       position: relative;
+    }
+ 
+    .projectDesc:hover {
+        visibility: visible;
+        color: #ffffff;  
+        background-color:#cccccc;
+        z-index: inherit 999;;
+        display: block;
+        border-radius: 6px;
+        padding:0px 5px 0px 5px;
+        position: absolute;
+        float: left;
+    }
+}
 
 @media screen and (max-width: 600px){
     h1 {
@@ -119,10 +146,7 @@ a:active {
         justify-content:center;
         margin-bottom: 8px;
     }
-    #Profilepic {
-        width:;
-        height:;
-    }
+
 }
 @media screen and (max-width: 320px){
     .navbar{
